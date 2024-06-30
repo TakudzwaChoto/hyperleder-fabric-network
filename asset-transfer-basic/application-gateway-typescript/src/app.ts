@@ -202,7 +202,7 @@ async function readAssetByID(contract: Contract): Promise<void> {
 /**
  * submitTransaction() will throw an error containing details of any error responses from the smart contract.
  */
-async function updateNonExistentAsset(contract: Contract): Promise<void>{
+async function updateNonExistentAsset(contract: Contract): Promise<void> {
     console.log('\n--> Submit Transaction: UpdateAsset asset70, asset70 does not exist and should return an error');
 
     try {
@@ -231,13 +231,13 @@ function envOrDefault(key: string, defaultValue: string): string {
  * displayInputParameters() will print the global scope parameters used by the main driver routine.
  */
 async function displayInputParameters(): Promise<void> {
-    console.log(`channelName:       ${channelName}`);
-    console.log(`chaincodeName:     ${chaincodeName}`);
-    console.log(`mspId:             ${mspId}`);
-    console.log(`cryptoPath:        ${cryptoPath}`);
-    console.log(`keyDirectoryPath:  ${keyDirectoryPath}`);
+    console.log(`channelName:       ${channelName}`);
+    console.log(`chaincodeName:     ${chaincodeName}`);
+    console.log(`mspId:             ${mspId}`);
+    console.log(`cryptoPath:        ${cryptoPath}`);
+    console.log(`keyDirectoryPath:  ${keyDirectoryPath}`);
     console.log(`certDirectoryPath: ${certDirectoryPath}`);
-    console.log(`tlsCertPath:       ${tlsCertPath}`);
-    console.log(`peerEndpoint:      ${peerEndpoint}`);
-    console.log(`peerHostAlias:     ${peerHostAlias}`);
+    console.log(`tlsCertPath:       ${tlsCertPath}`);
+    console.log(`peerEndpoint:      ${peerEndpoint}`);
+    console.log(`peerHostAlias:     ${peerHostAlias}`);
 }
